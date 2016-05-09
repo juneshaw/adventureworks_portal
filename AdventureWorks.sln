@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureWorksWeb", "AdventureWorksWeb\AdventureWorksWeb.csproj", "{3233DB71-44A8-4270-BF62-526BD0130D37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureWorksService", "AdventureWorksService\AdventureWorksService.csproj", "{B96B231A-ED5B-487F-A0A3-C9979B0B59DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{C66FE201-B47A-48EC-B379-8A9EBD84A632}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccLocalPath0 = .
+		SccLocalPath1 = AdventureWorksService
+		SccLocalPath2 = AdventureWorksWeb
+		SccLocalPath3 = UnitTests
+		SccNumberOfProjects = 4
+		SccProjectName1 = AdventureWorksService
+		SccProjectName2 = AdventureWorksWeb
+		SccProjectName3 = UnitTests
+		SccProjectUniqueName1 = AdventureWorksService\\AdventureWorksService.csproj
+		SccProjectUniqueName2 = AdventureWorksWeb\\AdventureWorksWeb.csproj
+		SccProjectUniqueName3 = UnitTests\\UnitTests.csproj
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs15
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3233DB71-44A8-4270-BF62-526BD0130D37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3233DB71-44A8-4270-BF62-526BD0130D37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3233DB71-44A8-4270-BF62-526BD0130D37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3233DB71-44A8-4270-BF62-526BD0130D37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B96B231A-ED5B-487F-A0A3-C9979B0B59DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B96B231A-ED5B-487F-A0A3-C9979B0B59DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B96B231A-ED5B-487F-A0A3-C9979B0B59DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B96B231A-ED5B-487F-A0A3-C9979B0B59DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C66FE201-B47A-48EC-B379-8A9EBD84A632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C66FE201-B47A-48EC-B379-8A9EBD84A632}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C66FE201-B47A-48EC-B379-8A9EBD84A632}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C66FE201-B47A-48EC-B379-8A9EBD84A632}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35
+	EndGlobalSection
+EndGlobal

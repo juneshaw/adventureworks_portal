@@ -1,0 +1,30 @@
+﻿@model AdventureWorksService.Models.PageOfList<AdventureWorksService.Models.ProductSearchItem>      
+
+<input type="hidden" id="TotalPageCount" name="TotalPageCount" value="@Model.TotalItemCount"/>
+
+<div class="content">
+    <div data-role="content-primary">
+        <div id="searchResults" style="margin-top:10px;width:100%;">                       
+            @Html.Partial("SearchResults", Model)
+        </div>
+            
+        <div id="searchResultsPaging" class="ui-grid-b" style="margin-top: 10px;text-align:center;">            
+            @if (Model.TotalPageCount > 1)
+            {
+                <div class="ui-block-a" style="display:inline;"><a href="javascript:void(0)" data-role="button" data-mini="true" onclick="Search.previousPage();" style="text-align:right;">Previous</a></div>
+                    
+                <div class="ui-block-b" style="display:inline;">
+                    <select id="searchPager" data-mini="true" onchange="Search.page($(this).val());">
+                        @for(var i = 0; i < Model.TotalPageCount; i++)
+                        {
+                            <option value="@(i+1)">@(i+1)</option>
+                        }
+                    </select>
+                </div>
+                    
+                <div class="ui-block-c" style="display:inline;"><a href="javascript:void(0)" data-role="button" data-mini="true" onclick="Search.nextPage();" style="text-align:left;">Next</a></div>
+            }     
+        </div>
+    </div>
+</div>
+

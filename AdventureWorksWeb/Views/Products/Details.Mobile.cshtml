@@ -1,0 +1,56 @@
+﻿@model AdventureWorksService.Models.Product
+
+<div class="content">
+    <div data-role="content-primary">
+        <div class="success" style="display:none;">
+            <img src="Content/Images/check.png" width="12" height="12" style="margin-left:5px;margin-right:5px;"/>
+            The product has been updated.
+        </div>
+        <div class="error" style="display:none;">
+            <table>
+                <tr>
+                    <td style="vertical-align:top;">
+                        <img src="Content/Images/error.gif" width="12" height="12" style="margin-left:5px;margin-right:5px;"/>
+                    </td>
+                    <td>
+                        <span class="errorMessage" />
+                    </td>
+                </tr>            
+            </table>            
+        </div>
+        <div data-role="fieldcontain">
+	        <label for="ProductNumber">Number:</label>
+	        @Html.EditorFor(p => p.ProductNumber)
+		</div>
+
+        <div data-role="fieldcontain">
+	        <label for="ProductName">Name:</label>
+	        @Html.EditorFor(p => p.ProductName)
+		</div>
+
+        <div data-role="fieldcontain">
+	        <label for="StandardCost">Standard Cost:</label>
+	        @Html.EditorFor(p => p.StandardCost)
+		</div>
+
+        <div data-role="fieldcontain">
+	        <label for="ListPrice">List Price:</label>
+	        @Html.EditorFor(p => p.ListPrice)
+		</div>
+
+        <div data-role="fieldcontain">
+	        <label for="ProductModel">Model:</label>
+	        @Html.DropDownListFor(p => p.ProductModel, (IEnumerable<SelectListItem>)ViewData["ProductModels"])
+		</div>
+
+        <div data-role="fieldcontain">
+	        <label for="ProductSubcategory">Subcategory:</label>
+	        @Html.DropDownListFor(p => p.ProductSubcategory, (IEnumerable<SelectListItem>)ViewData["ProductSubcategories"])
+		</div>
+
+        <div data-role="fieldcontain">
+		    <button type="submit" data-theme="b" onclick="ProductEdit.updateProduct();">Submit</button>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,25 @@
+﻿@model AdventureWorksService.Models.PageOfList<AdventureWorksService.Models.ProductSearchItem>      
+
+<table class="datagrid">
+    <tr>
+        <th style="width:20%" onclick="Search.sort('Name');">Name</th>
+        <th style="width:20%" onclick="Search.sort('Number');">Number</th>
+        <th style="width:20%" onclick="Search.sort('Subcategory');">Subcategory</th>
+        <th style="width:20%" onclick="Search.sort('Category');">Category</th>
+        <th style="width:20%" onclick="Search.sort('Model');">Model</th>
+    </tr>
+    @foreach(AdventureWorksService.Models.ProductSearchItem item in Model.Data)
+    {
+        <tr id="row_@item.ProductId" ondblclick="Search.loadProduct(@item.ProductId);">
+            <td class="Name">
+                <a href="javascript:void(0)" onclick="Search.loadProduct(@item.ProductId);">@item.Name</a>
+            </td>
+            <td class="Number">@item.Number</td>
+            <td class="Subcategory">@item.Subcategory</td>
+            <td class="Category">@item.Category</td>
+            <td class="Model">@item.Model</td>                
+        </tr>
+    }
+</table>  
+
+

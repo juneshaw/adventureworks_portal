@@ -1,0 +1,30 @@
+﻿@model AdventureWorksService.Models.TransactionHistoryPageOfList
+
+<header>
+    TRANSACTION HISTORY
+</header>
+<section>
+    <div id="transactionHistoryResults">
+        @Html.Partial("List", Model)
+    </div>
+
+    <input type="hidden" id="TransactionHistoryTotalPageCount" name="TransactionHistoryTotalPageCount" value="@Model.TotalPageCount" />
+
+    <div id="transactionHistoryResultsPaging" class="ui-grid-b" style="margin-top: 10px;text-align:center;">
+        @if (Model.TotalPageCount > 1)
+        {        
+            <div class="ui-block-a" style="display:inline;"><a href="javascript:void(0)" data-role="button" data-mini="true" onclick="TransactionHistory.previousPage();">Previous</a></div>
+
+            <div class="ui-block-b" style="display:inline;">
+                <select id="transactionHistoryPager" data-mini="true" onchange="TransactionHistory.page($(this).val());">
+                    @for(var i = 0; i < Model.TotalPageCount; i++)
+                    {
+                        <option value="@(i+1)">@(i+1)</option>
+                    }
+                </select>
+            </div>
+
+            <div class="ui-block-c" style="display:inline;"><a href="javascript:void(0)" data-role="button" data-mini="true" onclick="TransactionHistory.nextPage();">Next</a></div>
+        }     
+    </div>
+</section>

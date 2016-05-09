@@ -1,0 +1,25 @@
+﻿<div data-role="collapsible-set">
+    <div data-role="collapsible" data-collapsed="true">
+        <h3>
+            Search
+        </h3>
+        <div data-role="fieldcontain">            
+            <input type="search" id="keyword" onkeydown="Search.keyDown(event, $(this).val());" /><br />
+            <button type="submit" data-theme="b" onclick="Search.search($('#keyword').val());">Search</button>             
+
+            <div id="searchContent"></div>
+        </div>        
+    </div>
+    <div id="productEditPanel" data-role="collapsible" data-collapsed="true">
+        <h3>
+            Edit Product
+        </h3>
+        <div id="productEdit"></div>
+    </div>
+    <div data-role="collapsible" data-collapsed="true">
+        <h3>
+            Transaction History
+        </h3>
+        <div id="transactionHistory"></div>
+    </div>
+</div>       

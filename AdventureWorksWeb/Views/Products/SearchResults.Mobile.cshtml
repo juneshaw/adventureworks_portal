@@ -1,0 +1,14 @@
+﻿@model AdventureWorksService.Models.PageOfList<AdventureWorksService.Models.ProductSearchItem>      
+
+<br />
+
+<ul data-role="listview">
+    @foreach(AdventureWorksService.Models.ProductSearchItem item in Model.Data)
+    {
+	    <li><a href="javascript:void(0)" onclick="Search.loadProduct(@item.ProductId);">@item.Name</a></li>
+	}
+</ul>
+
+<br />  
+
+

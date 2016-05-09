@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="Content/Mobile/css" />          
+        <script src="Scripts/Mobile/js" type="text/javascript"></script>
+        <meta name="viewport" content="width=device-width" />     
+    </head>
+    <body>
+        <div data-role="page">
+            <div data-role="header" class="ui-bar ui-bar-b">
+		        AdventureWorks Back Office
+	        </div><!-- /header -->
+        
+            <div data-role="content">
+                @RenderBody()                
+            </div>
+
+            <div data-role="footer" class="ui-bar ui-bar-b">
+                @Html.Partial("_ViewSwitcher")
+            </div>
+        </div>
+    </body>
+</html>

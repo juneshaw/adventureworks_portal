@@ -1,0 +1,19 @@
+﻿@model AdventureWorksService.Models.TransactionHistoryPageOfList
+
+<table class="datagrid">
+    <tr>
+        <th style="width:25%">Date</th>
+        <th style="width:25%">Type</th>
+        <th style="width:25%">QTY</th>
+        <th style="width:25%">Actual Cost</th>
+    </tr>
+    @foreach(AdventureWorksService.Models.TransactionHistory item in Model.Data)
+    {
+        <tr>
+            <td>@item.TransactionDate</td>
+            <td>@item.TransactionType</td>
+            <td>@item.Quantity</td>
+            <td>@item.ActualCost</td>                           
+        </tr>
+    }
+</table>  

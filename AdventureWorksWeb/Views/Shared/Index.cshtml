@@ -1,0 +1,16 @@
+﻿
+<div id="search" class="content">
+    <header>
+        SEARCH
+    </header>
+    <section>        
+        <input type="text" id="keyword" onkeydown="Search.keyDown(event, $(this).val());" />    
+        <input type="button" onclick="Search.search($('#keyword').val());" value="Search"/>                   
+                
+        <div id="searchContent" data-display-mode="init"/>
+    </section>
+</div>
+        
+<div id="productEdit" class="content" data-display-mode="init" style="display:none;"></div>
+
+<div id="transactionHistory" class="content" data-display-mode="init" style="display:none;"></div>

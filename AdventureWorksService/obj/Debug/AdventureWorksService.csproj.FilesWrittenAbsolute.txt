@@ -1,0 +1,8 @@
+/Users/June/Workspace/adventureworksportal-26273/AdventureWorks/AdventureWorksService/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/Users/June/Workspace/adventureworksportal-26273/AdventureWorks/AdventureWorksService/bin/Debug/AdventureWorksService.dll.config
+/Users/June/Workspace/adventureworksportal-26273/AdventureWorks/AdventureWorksService/bin/Debug/AdventureWorksService.dll.mdb
+/Users/June/Workspace/adventureworksportal-26273/AdventureWorks/AdventureWorksService/bin/Debug/AdventureWorksService.dll
+/Users/June/Workspace/adventureworksportal-26273/AdventureWorks/AdventureWorksService/obj/Debug/AdventureWorksService.dll
+/Users/June/Workspace/adventureworksportal-26273/AdventureWorks/AdventureWorksService/obj/Debug/AdventureWorksService.dll.mdb
+/Users/June/Workspace/adventureworksportal-26273/AdventureWorks/AdventureWorksService/bin/Debug/EntityFramework.dll
+/Users/June/Workspace/adventureworksportal-26273/AdventureWorks/AdventureWorksService/bin/Debug/Microsoft.Web.Infrastructure.dll

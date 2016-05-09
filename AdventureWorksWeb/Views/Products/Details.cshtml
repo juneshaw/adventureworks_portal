@@ -1,0 +1,57 @@
+﻿@model AdventureWorksService.Models.Product
+
+<header>
+    EDIT PRODUCT
+</header>
+<section>
+    <div class="success" style="display:none;">
+        <img src="Content/Images/check.png" width="12" height="12" style="margin-left:5px;margin-right:5px;"/>
+        The product has been updated.
+    </div>
+    <div class="error" style="display:none;">
+        <table>
+            <tr>
+                <td style="vertical-align:top;">
+                    <img src="Content/Images/error.gif" width="12" height="12" style="margin-left:5px;margin-right:5px;"/>
+                </td>
+                <td>
+                    <span class="errorMessage" />
+                </td>
+            </tr>            
+        </table>            
+    </div>
+    <table>
+        <tr>
+            <td>Number</td>
+            <td>@Html.EditorFor(p => p.ProductNumber)</td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>@Html.EditorFor(p => p.ProductName)</td>
+        </tr>
+        <tr>
+            <td>Standard Cost</td>
+            <td>@Html.EditorFor(p => p.StandardCost)</td>
+        </tr>
+        <tr>
+            <td>List Price</td>
+            <td>@Html.EditorFor(p => p.ListPrice)</td>
+        </tr>
+        <tr>
+            <td>Model</td>
+            <td>
+                @Html.DropDownListFor(p => p.ProductModel, (IEnumerable<SelectListItem>)ViewData["ProductModels"])
+            </td>
+        </tr>
+        <tr>
+            <td>Subcategory</td>
+            <td>
+                @Html.DropDownListFor(p => p.ProductSubcategory, (IEnumerable<SelectListItem>)ViewData["ProductSubcategories"])
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align:center"><input type="button" value="Submit" onclick="ProductEdit.updateProduct();"/></td>
+        </tr>
+    </table>
+</section>
+
